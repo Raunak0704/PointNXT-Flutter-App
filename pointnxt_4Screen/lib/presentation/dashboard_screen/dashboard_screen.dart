@@ -21,7 +21,6 @@ class _DashboardScreenState extends State<DashboardScreen>
     with TickerProviderStateMixin {
   final PageController _pageController = PageController();
   int _currentPage = 0;
-  bool _isLoading = false;
   bool _isSyncing = false;
   String _selectedPeriod = '7';
   late TabController _tabController;
@@ -145,16 +144,12 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Future<void> _loadDashboardData() async {
-    setState(() {
-      _isLoading = true;
-    });
+    setState(() {});
 
     // Simulate API call
     await Future.delayed(const Duration(seconds: 1));
 
-    setState(() {
-      _isLoading = false;
-    });
+    setState(() {});
   }
 
   Future<void> _syncData() async {

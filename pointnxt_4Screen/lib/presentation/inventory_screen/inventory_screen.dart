@@ -21,7 +21,6 @@ class _InventoryScreenState extends State<InventoryScreen>
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   bool _isLoading = false;
-  final bool _isSearching = false;
   String _searchQuery = '';
   List<Map<String, dynamic>> _filteredProducts = [];
 

@@ -149,6 +149,7 @@ class _SplashScreenState extends State<SplashScreen>
     // Mock authentication status - in real app, check actual auth state
     final bool isAuthenticated = false; // Mock value
 
+    // ignore: dead_code
     if (isAuthenticated) {
       Navigator.pushReplacementNamed(context, '/dashboard-screen');
     } else {

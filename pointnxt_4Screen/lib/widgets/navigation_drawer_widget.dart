@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../core/app_export.dart';
- 
+
 // lib/widgets/navigation_drawer_widget.dart
 
 class NavigationDrawerWidget extends StatelessWidget {
@@ -109,8 +109,8 @@ class NavigationDrawerWidget extends StatelessWidget {
                   _buildNavigationItem(
                     context,
                     'Customers',
-                    'people',
-                    '/customers-screen',
+                    'customers',
+                    AppRoutes.customersScreen,
                   ),
                   _buildNavigationItem(
                     context,
@@ -121,14 +121,14 @@ class NavigationDrawerWidget extends StatelessWidget {
                   _buildNavigationItem(
                     context,
                     'Channel',
-                    'hub',
-                    '/channel-screen',
+                    'channels',
+                    AppRoutes.channelsScreen,
                   ),
                   _buildNavigationItem(
                     context,
                     'Integrations',
-                    'extension',
-                    '/integrations-screen',
+                    'integrations',
+                    AppRoutes.integrationsScreen,
                   ),
                   _buildNavigationItem(
                     context,
@@ -241,6 +241,9 @@ class NavigationDrawerWidget extends StatelessWidget {
       case '/dashboard-screen':
       case '/inventory-screen':
       case '/shipping-screen':
+      case '/customers-screen':
+      case '/channels-screen':
+      case '/integrations-screen':
         Navigator.pushReplacementNamed(context, route);
         break;
       default:
