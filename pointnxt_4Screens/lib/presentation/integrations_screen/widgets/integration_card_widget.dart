@@ -50,7 +50,7 @@ class IntegrationCardWidget extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       constraints: BoxConstraints(
-                        maxHeight: 10.h,
+                        maxHeight: 9.h,
                       ),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -68,27 +68,6 @@ class IntegrationCardWidget extends StatelessWidget {
                           fit: BoxFit.contain,
                           width: double.infinity,
                           height: 10.h,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 1.h,
-                      right: 2.w,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 2.w, vertical: 0.5.h),
-                        decoration: BoxDecoration(
-                          color: AppTheme.lightTheme.colorScheme.primary,
-                          borderRadius: BorderRadius.circular(12.0),
-                        ),
-                        child: Text(
-                          'Channel',
-                          style: AppTheme.lightTheme.textTheme.labelSmall
-                              ?.copyWith(
-                            color: AppTheme.lightTheme.colorScheme.onPrimary,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 10.sp,
-                          ),
                         ),
                       ),
                     ),
